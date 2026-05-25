@@ -1,0 +1,366 @@
+/**
+ * ============================================================================
+ * Toast Notification Styling
+ * ============================================================================
+ * Custom styling for SweetAlert2 toasts with white/green theme
+ * ============================================================================
+ */
+
+/* Toast Container - Top Right Position */
+.swal2-container {
+    z-index:9999;
+}
+
+/* Toast Popup Base Styling */
+.toast-popup {
+    background:white !important;
+    border-radius:12px !important;
+    box-shadow:0 6px 20px rgba(0,0,0,0.15) !important;
+    padding:16px 20px !important;
+    min-width:320px;
+    max-width:420px;
+    font-family:'Poppins', sans-serif !important;
+    border-left:5px solid #e5e7eb !important;
+    animation:slideInRight 0.3s ease !important;
+}
+
+/* Toast Close Button */
+.swal2-close {
+    color:#999 !important;
+    font-size:24px !important;
+    width:28px !important;
+    height:28px !important;
+    top:12px !important;
+    right:12px !important;
+    position:absolute !important;
+}
+
+.swal2-close:hover {
+    color:#333 !important;
+}
+
+/* Toast Title */
+.toast-title {
+    color:#000000 !important;
+    font-size:15px !important;
+    font-weight:600 !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+/* Toast HTML Container */
+.toast-html {
+    color:#666666 !important;
+    font-size:13px !important;
+    margin-top:4px !important;
+    padding:0 !important;
+}
+
+/* Success Toast - Green Theme */
+.toast-success .toast-popup {
+    border-left-color:#22c55e !important;
+    background:linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%) !important;
+}
+
+.toast-success .toast-title {
+    color:#166534 !important;
+}
+
+.toast-success .swal2-icon {
+    color:#22c55e !important;
+}
+
+/* Error Toast - Red Theme */
+.toast-error .toast-popup {
+    border-left-color:#ef4444 !important;
+    background:linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%) !important;
+}
+
+.toast-error .toast-title {
+    color:#991b1b !important;
+}
+
+.toast-error .swal2-icon {
+    color:#ef4444 !important;
+}
+
+/* Warning Toast - Yellow/Orange Theme */
+.toast-warning .toast-popup {
+    border-left-color:#f97316 !important;
+    background:linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%) !important;
+}
+
+.toast-warning .toast-title {
+    color:#92400e !important;
+}
+
+.toast-warning .swal2-icon {
+    color:#f97316 !important;
+}
+
+/* Informational Toast - Blue Theme */
+.toast-info .toast-popup {
+    border-left-color:#3b82f6 !important;
+    background:linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%) !important;
+}
+
+.toast-info .toast-title {
+    color:#1e40af !important;
+}
+
+.toast-info .swal2-icon {
+    color:#3b82f6 !important;
+}
+
+/* Toast Progress Bar */
+.toast-popup .swal2-timer-progress-bar {
+    background:linear-gradient(to right, #22c55e, #16a34a) !important;
+    height:3px !important;
+}
+
+.swal2-container.toast-success .swal2-timer-progress-bar {
+    background:linear-gradient(to right, #22c55e, #16a34a) !important;
+}
+
+.swal2-container.toast-error .swal2-timer-progress-bar {
+    background:linear-gradient(to right, #ef4444, #dc2626) !important;
+}
+
+.swal2-container.toast-warning .swal2-timer-progress-bar {
+    background:linear-gradient(to right, #f97316, #ea580c) !important;
+}
+
+.swal2-container.toast-info .swal2-timer-progress-bar {
+    background:linear-gradient(to right, #3b82f6, #2563eb) !important;
+}
+
+/* Icon sizing */
+.swal2-icon {
+    width:32px !important;
+    height:32px !important;
+    margin:0 12px 0 0 !important;
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from {
+        opacity:0;
+        transform:translateX(100px);
+    }
+    to {
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+.swal2-shown.swal2-toast.swal2-hide {
+    animation:fadeOut 0.3s ease !important;
+}
+    background: linear-gradient(to right, #22c55e, #16a34a) !important;
+}
+
+.swal2-container.toast-error .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #ef4444, #dc2626) !important;
+}
+
+.swal2-container.toast-warning .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #f97316, #ea580c) !important;
+}
+
+.swal2-container.toast-info .swal2-timer-progress-bar {
+    background: linear-gradient(to right, #3b82f6, #1d4ed8) !important;
+}
+
+/* Toast Icons */
+.toast-popup .swal2-icon {
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 12px 0 0 !important;
+    flex-shrink: 0;
+}
+
+.toast-popup .swal2-icon.swal2-success {
+    border-color: transparent !important;
+}
+
+.toast-popup .swal2-icon.swal2-error {
+    border-color: transparent !important;
+}
+
+/* Slide animation */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+/* ============================================================================
+ * Confirmation Dialog Styling
+ * ============================================================================
+ */
+
+.confirm-popup {
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+    padding: 32px !important;
+    max-width: 420px;
+    font-family: 'Poppins', sans-serif !important;
+    animation: scaleIn 0.3s ease !important;
+}
+
+.confirm-title {
+    color: #000000 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+}
+
+.confirm-html {
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 1.6;
+    margin: 16px 0 24px !important;
+}
+
+/* Confirmation Dialog Buttons */
+.confirm-popup .swal2-actions {
+    gap: 12px;
+}
+
+.confirm-popup .swal2-confirm,
+.confirm-popup .swal2-cancel {
+    padding: 12px 28px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    font-family: 'Poppins', sans-serif !important;
+    transition: all 0.2s ease !important;
+}
+
+.confirm-popup .swal2-confirm {
+    background-color: #ef4444 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.confirm-popup .swal2-confirm:hover {
+    background-color: #dc2626 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.confirm-popup .swal2-cancel {
+    background-color: #e5e7eb !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.confirm-popup .swal2-cancel:hover {
+    background-color: #d1d5db !important;
+    transform: translateY(-2px);
+}
+
+/* Scale animation for confirmation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================================================================
+ * Loading Dialog Styling
+ * ============================================================================
+ */
+
+.loading-popup {
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+    padding: 40px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.loading-popup .swal2-title {
+    color: #000000 !important;
+    font-size: 18px !important;
+}
+
+/* Loading Spinner */
+.swal2-popup.loading-popup .swal2-loading {
+    border-color: #e5e7eb !important;
+    border-right-color: #22c55e !important;
+}
+
+/* ============================================================================
+ * Responsive Design
+ * ============================================================================
+ */
+
+@media (max-width: 480px) {
+    .toast-popup {
+        min-width: 280px !important;
+        margin: 8px !important;
+    }
+
+    .confirm-popup {
+        padding: 24px !important;
+        max-width: 90vw;
+    }
+
+    .loading-popup {
+        padding: 32px !important;
+    }
+
+    .confirm-popup .swal2-confirm,
+    .confirm-popup .swal2-cancel {
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+    }
+}
+
+/* ============================================================================
+ * Accessibility
+ * ============================================================================
+ */
+
+.swal2-popup:focus {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
+}
+
+.toast-popup:focus-visible,
+.confirm-popup:focus-visible {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
+}
