@@ -1,0 +1,49 @@
+/* Main Reset */
+.root {
+    -fx-font-family: 'Segoe UI', 'Poppins', sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Base Buttons */
+.button {
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+/* Tables */
+.table-view {
+    -fx-selection-bar: #dcfce7;
+    -fx-selection-bar-non-focused: #f3f4f6;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f9fafb;
+    -fx-border-color: transparent transparent #e5e7eb transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6b7280;
+}
+
+.table-row-cell {
+    -fx-border-color: transparent transparent #f3f4f6 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fafafa;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f3f4f6;
+}
